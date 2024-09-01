@@ -92,3 +92,8 @@ class SoccerPitchConfiguration:
         "#FF6347", "#FF6347", "#FF6347", "#FF6347", "#FF6347", "#FF6347",
         "#00BFFF", "#00BFFF"
     ])
+
+@dataclass
+class StatsbombSoccerPitchConfiguration(SoccerPitchConfiguration):
+    width: int = 8000  # [cm] - New width for the custom pitch
+    length: int = 12000  # [cm] - New length for the custom pitch

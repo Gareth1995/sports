@@ -304,3 +304,37 @@ def draw_pitch_voronoi_diagram(
     overlay = cv2.addWeighted(voronoi, opacity, pitch, 1 - opacity, 0)
 
     return overlay
+
+def live_xT():
+     """
+    Takes in ball xy coordinates and finds xT value for the team in possession of the ball based on their xT grids. The output is a tuple of the team name of the
+    team in possession of the ball and the corressponding xT value.
+
+    Args:
+        config (SoccerPitchConfiguration): Configuration object containing the
+            dimensions and layout of the pitch.
+        ball_xy (np.ndarray): Array of (x, y) coordinates representing the position
+            of the ball.
+        xT_grid_team_1 (np.ndarray): Array of xT values for each segment on the pitch for team 1.
+        xT_grid_team_2 (np.ndarray): Array of xT values for each segment on the pitch for team 2.
+        direction_of_attack_team_1 (Bool): A boolean to indicate if team 1 is attacking from left to right (true) or not (false).
+            This helps to determine how to orient the xT grids
+        llm_prompt (string): A string prompt for an LLM model that will see the frame and identify who is the team in possession
+        team_1_color (sv.Color, optional): Color representing the control area of
+            team 1. Defaults to sv.Color.RED.
+        team_2_color (sv.Color, optional): Color representing the control area of
+            team 2. Defaults to sv.Color.WHITE.
+        opacity (float, optional): Opacity of the Voronoi diagram overlay.
+            Defaults to 0.5.
+        padding (int, optional): Padding around the pitch in pixels.
+            Defaults to 50.
+        scale (float, optional): Scaling factor for the pitch dimensions.
+            Defaults to 0.1.
+        pitch (Optional[np.ndarray], optional): Existing pitch image to draw the
+            Voronoi diagram on. If None, a new pitch will be created. Defaults to None.
+
+    Returns:
+        tuple: (team_name, xT_value)
+    """
+     pass
+
