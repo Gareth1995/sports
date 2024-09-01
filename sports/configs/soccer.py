@@ -97,3 +97,9 @@ class SoccerPitchConfiguration:
 class StatsbombSoccerPitchConfiguration(SoccerPitchConfiguration):
     width: int = 8000  # [cm] - New width for the custom pitch
     length: int = 12000  # [cm] - New length for the custom pitch
+    penalty_box_width: int = 5100  # [cm]
+    penalty_box_length: int = 2015  # [cm]
+    goal_box_width: int = 2832  # [cm]
+    goal_box_length: int = 550  # [cm]
+    centre_circle_radius: int = 915  # [cm]
+    penalty_spot_distance: int = 1100  # [cm]
