@@ -311,7 +311,7 @@ def live_xT():
     team in possession of the ball and the corressponding xT value.
 
     Args:
-        config (SoccerPitchConfiguration): Configuration object containing the
+        config (StatsbombSoccerPitchConfiguration): Configuration object containing the
             dimensions and layout of the pitch.
         ball_xy (np.ndarray): Array of (x, y) coordinates representing the position
             of the ball.
@@ -324,8 +324,6 @@ def live_xT():
             team 1. Defaults to sv.Color.RED.
         team_2_color (sv.Color, optional): Color representing the control area of
             team 2. Defaults to sv.Color.WHITE.
-        opacity (float, optional): Opacity of the Voronoi diagram overlay.
-            Defaults to 0.5.
         padding (int, optional): Padding around the pitch in pixels.
             Defaults to 50.
         scale (float, optional): Scaling factor for the pitch dimensions.
